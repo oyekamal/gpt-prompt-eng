@@ -24,74 +24,47 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
   
 # prompt
 
-lamp_review = """
-Needed a nice lamp for my bedroom, and this one had \
-additional storage and not too high of a price point. \
-Got it fast.  The string to our lamp broke during the \
-transit and the company happily sent over a new one. \
-Came within a few days as well. It was easy to put \
-together.  I had a missing part, so I contacted their \
-support and they very quickly got me the missing piece! \
-Lumina seems to me to be a great company that cares \
-about their customers and products!!
-"""
+user_messages = [
+  "La performance du système est plus lente que d'habitude.",  # System performance is slower than normal         
+  "Mi monitor tiene píxeles que no se iluminan.",              # My monitor has pixels that are not lighting
+  "Il mio mouse non funziona",                                 # My mouse is not working
+  "Mój klawisz Ctrl jest zepsuty",                             # My keyboard has a broken control key
+  "我的屏幕在闪烁"                                               # My screen is flashing
+] 
 
-prompt = f"""
-What is the sentiment of the following product review, 
-which is delimited with triple backticks?
+for issue in user_messages:
+    prompt = f"Tell me what language this is: ```{issue}```"
+    lang = get_completion(prompt)
+    print(f"Original message ({lang}): {issue}")
 
-Identify the following items from the review text: 
-- Item purchased by reviewer
-- Company that made the item
-
-The review is delimited with triple backticks. \
-Format your response as a JSON object with \
-"Item" and "Brand" as the keys. 
-If the information isn't present, use "unknown" \
-as the value.
-Make your response as short as possible.
-
-Give your answer as a single word, either "positive" \
-or "negative".
-
-Review text: '''{lamp_review}'''
-"""
-# response = get_completion(prompt)
-# print(response.content)
-
+    prompt = f"""
+    Translate the following  text to English \
+    and Korean: ```{issue}```
+    """
+    response = get_completion(prompt)
+    print(response.content, "\n")
+    
+    
 #output
-# positive
 
-# {
-#   "Item": "lamp",
-#   "Brand": "Lumina"
-# }
+# Original message (ChatCompletionMessage(content='This is French.', role='assistant', function_call=None, tool_calls=None)): La performance du système est plus lente que d'habitude.
+# English: "The system performance is slower than usual."
 
+# Korean: "시스템 성능이 평소보다 느립니다." 
 
-prompt = f"""
-Identify the following items from the review text: 
-- Sentiment (positive or negative)
-- Is the reviewer expressing anger? (true or false)
-- Item purchased by reviewer
-- Company that made the item
+# Original message (ChatCompletionMessage(content='This is Spanish.', role='assistant', function_call=None, tool_calls=None)): Mi monitor tiene píxeles que no se iluminan.
+# English: "My monitor has pixels that do not light up."
 
-The review is delimited with triple backticks. \
-Format your response as a JSON object with \
-"Sentiment", "Anger", "Item" and "Brand" as the keys.
-If the information isn't present, use "unknown" \
-as the value.
-Make your response as short as possible.
-Format the Anger value as a boolean.
+# Korean: "내 모니터에는 빛나지 않는 픽셀이 있습니다." 
 
-Review text: '''{lamp_review}'''
-"""
-response = get_completion(prompt)
-print(response.content)
+# Original message (ChatCompletionMessage(content='Italian', role='assistant', function_call=None, tool_calls=None)): Il mio mouse non funziona
+# English: My mouse is not working
+# Korean: 내 마우스가 작동하지 않습니다 
 
-#output
-# {
-#     "Sentiment": "positive",
-#     "Anger": false,
-#     "Item": "lamp",
-#     "Brand": "Lumina"
-# }
+# Original message (ChatCompletionMessage(content='This is Polish.', role='assistant', function_call=None, tool_calls=None)): Mój klawisz Ctrl jest zepsuty
+# English: My Ctrl key is broken
+# Korean: 제 Ctrl 키가 고장 났어요 
+
+# Original message (ChatCompletionMessage(content='This is Chinese.', role='assistant', function_call=None, tool_calls=None)): 我的屏幕在闪烁
+# English: My screen is flickering
+# Korean: 내 화면이 깜박거립니다 
