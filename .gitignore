@@ -130,6 +130,7 @@ inferring (extracting emtion)/.env
 Transforming/.env
 Expanding/.env
 chat-gpt/.env
+animation-prompt/.env
 .venv
 env/
 venv/
