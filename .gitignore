@@ -129,6 +129,7 @@ Principle-2:Give the model time to think/.env
 inferring (extracting emtion)/.env
 Transforming/.env
 Expanding/.env
+chat-gpt/.env
 .venv
 env/
 venv/
