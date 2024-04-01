@@ -126,6 +126,7 @@ celerybeat.pid
 # Environments
 Principle-1:clean-and-specific-instructions/.env
 Principle-2:Give the model time to think/.env
+inferring (extracting emtion)/.env
 .venv
 env/
 venv/
