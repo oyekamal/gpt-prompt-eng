@@ -204,126 +204,7 @@ example_data = f"""character,emotion,intensity,head_direction,eyes_direction,scr
 5,1,2,3,2,4,46,FALSE,you,68.02,68.18,0,0.16
 5,1,2,3,2,4,46,FALSE,have,68.179999,68.339999,0,0.16
 5,1,2,3,2,4,46,FALSE,to,68.34,68.47,0,0.13
-5,1,2,3,2,4,46,FALSE,do,68.469999,68.749999,0,0.28
-5,1,2,3,2,4,46,FALSE,is,68.759999,68.999999,0,0.24
-5,1,2,3,3,4,46,FALSE,provide,69.009999,69.529999,0,0.52
-5,1,2,3,3,4,46,FALSE,the,69.54,69.62,0,0.08
-5,1,2,3,3,4,46,FALSE,in fo ma tion,69.62,70.45,0,0.83
-5,1,2,3,3,4,7,FALSE,in,70.469999,70.629999,0,0.16
-5,1,2,3,3,4,7,FALSE,a,70.629999,70.699999,0,0.07
-5,1,2,3,3,4,7,FALSE,CSV,70.699999,71.189999,0,0.49
-5,1,2,3,3,4,7,FALSE,file,71.199999,71.629999,0,0.43
-5,1,2,3,3,4,7,FALSE,and,71.9,72.05,0,0.15
-5,1,1,3,3,4,7,FALSE,the,72.049999,72.159999,0,0.11
-5,1,1,3,3,4,7,FALSE,software,72.16,72.69,0,0.53
-5,1,1,3,3,4,7,FALSE,will,72.719999,72.909999,0,0.19
-5,1,1,3,3,4,7,FALSE,do,72.95,73.12,0,0.17
-5,1,1,3,3,4,7,FALSE,its,73.12,73.39,0,0.27
-5,1,1,3,3,4,7,FALSE,magic,73.39,73.82,0,0.43
-5,1,1,3,2,4,2,FALSE,the,74.34,74.48,0,0.14
-5,1,1,3,2,4,2,FALSE,video,74.48,74.85,0,0.37
-5,1,2,3,2,4,2,FALSE,you,74.85,75.1,1.5,0.25
-5,1,2,3,2,4,2,FALSE,are,75.1,75.22,1.5,0.12
-5,1,2,3,2,4,2,FALSE,watching,75.22,75.67,1.5,0.45
-5,1,2,3,2,4,2,FALSE,right,75.67,75.92,1.5,0.25
-5,1,2,3,2,4,2,FALSE,now,75.92,76.29,1.5,0.37
-5,1,2,3,2,4,2,FALSE,is,76.35,76.56,0,0.21
-5,1,2,3,2,4,2,FALSE,made,76.56,76.81,0,0.25
-5,1,2,3,2,4,2,FALSE,by,76.81,76.98,0,0.17
-5,1,2,3,2,4,2,FALSE,my,77.01,77.23,0,0.22
-5,1,2,3,2,4,2,FALSE,software,77.23,77.79,0,0.56
-5,1,2,3,2,4,3,FALSE,the,78.1,78.27,0,0.17
-5,1,2,3,3,4,3,FALSE,best,78.27,78.49,0,0.22
-5,1,2,3,3,4,3,FALSE,part,78.49,78.74,0,0.25
-5,1,2,3,3,4,3,FALSE,about,78.75,79,0,0.25
-5,1,2,3,3,4,3,FALSE,this,79.01,79.17,0,0.16
-5,1,2,3,3,4,3,FALSE,software,79.17,79.41,0,0.24
-5,1,2,3,2,4,3,FALSE,it,79.53,79.73,0,0.2
-5,1,2,3,2,4,3,FALSE,is,79.75,80.04,0,0.29
-5,1,2,3,2,4,3,FALSE,by,80.21,80.39,0,0.18
-5,1,2,3,2,4,3,FALSE,changing,80.4,80.88,0,0.48
-5,1,2,3,2,4,3,FALSE,one,80.88,81.17,0,0.29
-5,1,2,3,2,4,3,FALSE,to,81.17,81.34,0,0.17
-5,1,2,3,2,4,3,FALSE,two,81.34,81.65,0,0.31
-5,1,2,3,2,4,3,FALSE,in,81.66,81.8,0,0.14
-5,1,2,3,2,4,3,FALSE,the,81.8,81.8,0,0
-5,1,2,3,2,4,3,FALSE,CSV,81.889999,82.859999,0,0.97
-5,1,2,3,2,4,3,FALSE,file,82.86,82.89,0,0.03
-5,1,2,3,2,4,2,FALSE,I,83.02,83.14,1.5,0.12
-5,1,2,3,2,4,2,FALSE,can,83.139999,83.329999,1.5,0.19
-5,1,2,3,2,4,2,FALSE,switch,83.33,83.6,1.5,0.27
-5,1,2,3,2,4,2,FALSE,between,83.599999,83.939999,1.5,0.34
-5,1,2,3,2,4,2,FALSE,different,83.94,84.3,1.5,0.36
-5,1,2,3,2,4,2,FALSE,characters,84.3,84.82,1.5,0.52
-7,1,2,3,2,4,2,FALSE,like,85.219999,85.469999,0,0.25
-7,1,2,3,2,4,2,FALSE,this,85.469999,85.729999,0,0.26
-8,1,2,3,2,4,2,FALSE,like,86.32,86.5,0,0.18
-8,1,2,3,2,4,2,FALSE,this,86.5,86.78,0,0.28
-1,1,2,3,2,1,2,FALSE,this,87.46,87.74,0,0.28
-2,1,2,3,2,1,2,FALSE,huh,88.459999,88.869999,0,0.41
-6,1,1,3,2,4,38,FALSE,cool,89.1,89.32,0,0.22
-6,1,1,3,2,4,38,FALSE,right,89.32,89.72,0,0.4
-9,1,2,3,2,4,38,FALSE,you,90.33,90.52,0,0.19
-9,1,2,3,2,4,38,FALSE,can,90.52,90.88,0,0.36
-9,1,2,3,2,4,38,FALSE,use,90.93,91.3,0,0.37
-9,1,2,3,2,4,38,FALSE,your,91.3,91.46,0,0.16
-9,1,2,3,2,4,38,FALSE,custom,91.7,92.08,0,0.38
-9,1,2,3,2,4,38,FALSE,character,92.08,92.46,0,0.38
-5,1,2,3,3,4,38,FALSE,too,92.46,92.79,0,0.33
-5,1,2,3,3,4,3,FALSE,which,93.31,93.58,0,0.27
-5,1,2,3,3,4,3,FALSE,I,93.78,93.79,0,0.01
-5,1,2,3,3,4,3,FALSE,will,93.79,93.85,0,0.06
-5,1,2,3,3,4,3,FALSE,explain,93.85,94.26,0,0.41
-5,1,2,3,3,4,3,FALSE,in,94.27,94.41,0,0.14
-5,1,2,3,3,4,3,FALSE,a,94.41,94.46,0,0.05
-5,1,2,3,3,4,3,FALSE,different,94.46,94.85,0,0.39
-5,1,2,3,3,4,3,FALSE,video,94.85,95.37,0,0.52
-5,1,2,3,2,4,3,FALSE,AND,95.41,95.71,0,0.3
-5,1,2,3,2,4,42,FALSE,the,95.72,95.86,0,0.14
-5,1,2,3,2,4,42,FALSE,working,95.9,96.29,0,0.39
-5,1,2,3,2,4,42,FALSE,of,96.3,96.48,0,0.18
-5,1,2,3,2,4,42,FALSE,this,96.48,96.65,0,0.17
-5,1,2,3,2,4,42,FALSE,software,96.65,97,0,0.35
-5,1,2,3,3,4,1,FALSE,if,97.01,97.28,0,0.27
-5,1,2,3,3,4,1,FALSE,you,97.88,97.97,0,0.09
-5,1,2,3,3,4,1,FALSE,like,97.97,98.22,0,0.25
-5,1,2,3,3,4,1,FALSE,the,98.22,98.36,0,0.14
-5,1,2,3,3,4,1,FALSE,idea,98.36,98.78,0,0.42
-5,1,2,3,2,4,3,FALSE,I,98.8,98.92,0,0.12
-5,1,2,3,2,4,3,FALSE,can,98.92,99.14,0,0.22
-5,1,2,3,2,4,3,FALSE,make,99.139999,99.419999,0,0.28
-5,1,1,3,2,4,3,FALSE,this,99.42,99.62,1.5,0.2
-5,1,1,3,2,4,3,FALSE,software,99.62,100.14,1.5,0.52
-5,1,1,3,2,4,3,FALSE,publicly,100.16,100.81,1.5,0.65
-5,1,1,3,2,4,3,FALSE,available,100.84,101.41,1.5,0.57
-5,1,1,3,2,4,3,FALSE,for,101.44,101.62,1.5,0.18
-5,1,1,3,2,4,47,FALSE,you,101.63,101.83,0,0.2
-5,1,1,3,2,4,47,FALSE,guys,101.849999,102.189999,0,0.34
-5,1,2,3,2,4,47,FALSE,through,102.53,102.73,0,0.2
-5,1,2,3,2,4,47,FALSE,a,102.759999,102.839999,0,0.08
-5,1,2,3,2,4,47,FALSE,website,102.84,103.52,0,0.68
-5,1,2,3,3,4,47,FALSE,please,104.04,104.36,0,0.32
-5,1,2,3,3,4,47,FALSE,do,104.38,104.6,0,0.22
-5,1,2,3,3,4,47,FALSE,share,104.599999,104.869999,0,0.27
-5,1,2,3,3,4,47,FALSE,your,104.87,105.08,0,0.21
-5,1,2,3,3,4,31,FALSE,thoughts,105.099999,105.719999,0,0.62
-5,1,2,3,3,4,31,FALSE,and,105.86,106.36,0,0.5
-5,1,1,3,3,4,31,FALSE,subscribe,106.619999,107.199999,0,0.58
-5,1,1,3,3,4,31,FALSE,to,107.199999,107.369999,0,0.17
-5,1,1,3,2,4,31,FALSE,my,107.369999,107.549999,0,0.18
-5,1,1,3,2,4,31,FALSE,channel,107.549999,107.899999,0,0.35
-5,1,1,3,2,4,31,FALSE,ok,108.49,108.85,0,0.36
-5,1,2,3,2,4,19,FALSE,I,109.54,109.63,0,0.09
-5,1,2,3,2,4,19,FALSE,WILL,109.63,109.82,0,0.19
-5,1,2,3,2,4,19,FALSE,SEE,109.82,110.05,0,0.23
-5,1,2,3,2,4,47,FALSE,YOU,110.05,110.42,0,0.37
-5,1,2,3,2,4,47,FALSE,IN,110.46,110.62,0,0.16
-5,1,2,3,2,4,47,FALSE,THE,110.64,110.69,0,0.05
-5,1,2,3,2,4,47,FALSE,NEXT,110.69,110.99,0,0.3
-5,1,2,3,2,4,47,FALSE,VIDEO,110.99,111.36,0,0.37
-5,1,1,3,2,4,18,FALSE,TAKE,111.73,111.93,1.5,0.2
-5,1,1,3,2,4,18,FALSE,CARE,111.93,112.18,1.5,0.25
-5,1,1,3,2,4,18,FALSE,bye,112.23,112.63,1.5,0.4
+
 """
 out_csv= f"""character,emotion,intensity,head_direction,eyes_direction,screen_mode,body_action,reaction_bool,word,init,final,room
 ,,,,,,,,your,0.39,0.51,0
@@ -497,19 +378,41 @@ assets_data = str({
 })
 prompt = f"""
 
-your job is to fillout the remaining values in `out-csv` based on your judement. make sure the value you are going to \
-add is not out of `assets_data`
+Your task involves filling out the remaining values in the out-csv CSV file based on your judgment. It's crucial to ensure that the values you add are within the bounds of the assets_data JSON.
+The assets_data JSON, which I will provide, contains all the assets that can be utilized in the out-csv CSV file.
+I will also share an example_data CSV file to help you understand the desired format of the final CSV. Your goal is to create a CSV file that matches this example. Remember, the values you're adding pertain to the animation character's reactions to each word specified in the word field.
+Here's an illustrative example of how the filled out-csv might appear for a new row with some missing data:
 
-the `assets_data` im going to provide which contain all the assets which can be use in the csv \
-  
-the example `example_data` too so you can understand how the end csv going to  \
-look like.
-following is the list of values can be added into the csv file.
+character,emotion,intensity,head_direction,eyes_direction,screen_mode,body_action,reaction_bool,word,init,final,room 7,3,1,3,2,3,?,FALSE,excited,1.0,2.3,0.5
 
-assets_data: ```{assets_data}```
-example_data: ```{example_data}```
-out-csv: ```{out_csv}```
+
+In this example:
+
+- **Character**: A match was found in `assets_data` (character: {{'7': '7'}}...), so "7" is copied. All of them are different characters.
+- **Emotion**: A match was found in `assets_data` (emotion: {{'3': 'angry'}}...), so "3" is copied based on your judgment of what emotion of eyes should be added for the given word.
+- **Intensity**: A match was found in `assets_data` (intensity: {{'1': True}}), so "1" is copied based on intensity strong emotion or normal.
+- **Head_direction**: There was no match or value outside the range (1-3) in `assets_data`, so based on the word where the head_direction should move, we copy from 1 to 3 ({{"1": "L", "2": "M", "3": "R"}} L=left, M=mid, R=Right).
+- **Eyes_direction**: A match was found in `assets_data` (eyes_direction: {{'2': 'M'}}), so based on the word where the eyes_direction should move, we copy from 1 to 3 ({{"1": "L", "2": "M", "3": "R"}} L=left, M=mid, R=Right).
+- **Screen_mode**: You must select from "screen_mode": {{
+            "1": "office",
+            "2": "explanation",
+            "3": "white",
+            "4": "plain",
+            "5": "green",
+        }}
+from 1 to 5 based on your judgment regarding what background should be added.
+- **Body_action**: You must select a body type from ("body_action": {{'1': 'achieve'}},,,) based on your judgment regarding what body movement should be added.
+- **Reaction_bool**: A match was found in `assets_data` (reaction: {{'1': 'happy'}}), so "FALSE" is copied (assuming this is a boolean field based on the example data).
+- **Word, init, final, room**: These values cannot be filled in as they will be provided.
+
+The following is the list of data.
+
+assets_data: ```{assets_data!r}```
+example_data: ```{example_data!r}```
+out-csv: ```{out_csv!r}```
 """
+
+
 print(prompt)
 with open("myfile.txt", "w") as file1:
     # Writing data to a file
