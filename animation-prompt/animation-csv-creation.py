@@ -385,8 +385,8 @@ I will also share an e`xample_data` CSV file to help you understand the desired 
 
 In this example:
 
-- **Character**: A match was found in `assets_data` (character: {{'7': '7'}}...), so "7" is copied. All of them are different characters.
-- **Emotion**: A match was found in `assets_data` (emotion: {{'3': 'angry'}}...), so "3" is copied based on your judgment of what emotion of eyes should be added for the given word.
+- **Character**: A match was found in `assets_data` (character: {{'7': '7'}}...), so "7" is copied. All of them are different characters. based on word if the character is changed please do change the character but do keep remver which user are you talking to.
+- **Emotion**: A match was found in `assets_data` (emotion: {{'3': 'angry'}}...), so "3" is copied based on your judgment of what emotion of eyes should be added for the given word. add differect variation make it more fun. 
 - **Intensity**: A match was found in `assets_data` (intensity: {{'1': True}}), so "1" is copied based on intensity strong emotion or normal.
 - **Head_direction**: There was no match or value outside the range (1-3) in `assets_data`, so based on the word where the head_direction should move, we copy from 1 to 3 ({{"1": "L", "2": "M", "3": "R"}} L=left, M=mid, R=Right) make sure you add more movement.
 - **Eyes_direction**: A match was found in `assets_data` (eyes_direction: {{'2': 'M'}}), so based on the word where the eyes_direction should move, we copy from 1 to 3 ({{"1": "L", "2": "M", "3": "R"}} L=left, M=mid, R=Right) make sure you add more movement.
