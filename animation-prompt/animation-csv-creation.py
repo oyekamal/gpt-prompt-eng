@@ -378,12 +378,9 @@ assets_data = str({
 })
 prompt = f"""
 
-Your task involves filling out the remaining values in the out-csv CSV file based on your judgment. It's crucial to ensure that the values you add are within the bounds of the assets_data JSON.
-The assets_data JSON, which I will provide, contains all the assets that can be utilized in the out-csv CSV file.
-I will also share an example_data CSV file to help you understand the desired format of the final CSV. Your goal is to create a CSV file that matches this example. Remember, the values you're adding pertain to the animation character's reactions to each word specified in the word field.
-Here's an illustrative example of how the filled out-csv might appear for a new row with some missing data:
-
-character,emotion,intensity,head_direction,eyes_direction,screen_mode,body_action,reaction_bool,word,init,final,room 7,3,1,3,2,3,?,FALSE,excited,1.0,2.3,0.5
+Your task involves filling out the remaining values in the `out-csv` CSV file based on your judgment. It's crucial to ensure that the values you add are within the bounds of the `assets_data` JSON.
+The `assets_data` JSON, which I will provide, contains all the assets that can be utilized in the `out-csv` CSV file.
+I will also share an e`xample_data` CSV file to help you understand the desired format of the final CSV. Your goal is to create a CSV file that matches this example. Remember, the values you're adding pertain to the animation character's reactions to each word specified in the word field.
 
 
 In this example:
@@ -391,8 +388,8 @@ In this example:
 - **Character**: A match was found in `assets_data` (character: {{'7': '7'}}...), so "7" is copied. All of them are different characters.
 - **Emotion**: A match was found in `assets_data` (emotion: {{'3': 'angry'}}...), so "3" is copied based on your judgment of what emotion of eyes should be added for the given word.
 - **Intensity**: A match was found in `assets_data` (intensity: {{'1': True}}), so "1" is copied based on intensity strong emotion or normal.
-- **Head_direction**: There was no match or value outside the range (1-3) in `assets_data`, so based on the word where the head_direction should move, we copy from 1 to 3 ({{"1": "L", "2": "M", "3": "R"}} L=left, M=mid, R=Right).
-- **Eyes_direction**: A match was found in `assets_data` (eyes_direction: {{'2': 'M'}}), so based on the word where the eyes_direction should move, we copy from 1 to 3 ({{"1": "L", "2": "M", "3": "R"}} L=left, M=mid, R=Right).
+- **Head_direction**: There was no match or value outside the range (1-3) in `assets_data`, so based on the word where the head_direction should move, we copy from 1 to 3 ({{"1": "L", "2": "M", "3": "R"}} L=left, M=mid, R=Right) make sure you add more movement.
+- **Eyes_direction**: A match was found in `assets_data` (eyes_direction: {{'2': 'M'}}), so based on the word where the eyes_direction should move, we copy from 1 to 3 ({{"1": "L", "2": "M", "3": "R"}} L=left, M=mid, R=Right) make sure you add more movement.
 - **Screen_mode**: You must select from "screen_mode": {{
             "1": "office",
             "2": "explanation",
@@ -404,6 +401,9 @@ from 1 to 5 based on your judgment regarding what background should be added.
 - **Body_action**: You must select a body type from ("body_action": {{'1': 'achieve'}},,,) based on your judgment regarding what body movement should be added.
 - **Reaction_bool**: A match was found in `assets_data` (reaction: {{'1': 'happy'}}), so "FALSE" is copied (assuming this is a boolean field based on the example data).
 - **Word, init, final, room**: These values cannot be filled in as they will be provided.
+
+make sure you dont lose any data when filling out the `out-csv`
+
 
 The following is the list of data.
 
